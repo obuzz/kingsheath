@@ -1,6 +1,15 @@
-<% @posts.each do |post| %>
-     <h1><%= link_to "post.title", post %></h1>
-      <h3><%= post.image %></h3>
-       <p><%= post.content %></p>
-       <p><%= post.social  %></p>
-  <% end %>
+<nav class=”navbar navbar-default navbar-fixed-top”>
+  <div class=”container-fluid”>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <h1><%= link_to "post.title", post %></h1>
+        <h3><%= post.image %></h3>
+          <p><%= post.content %></p>
+          <p><%= post.social  %></p>
+    <% end %>
+  </div>
+</div>
