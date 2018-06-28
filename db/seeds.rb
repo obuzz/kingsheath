@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Category.destroy_all
+
+Category.create(name: 'Beatles')
+Category.create(name: 'Rolling Stones')
+
+Post.create(title: "Smash hit sensations the Rolling Stones return to Kings Heath", image: "image holder", content: "A once in the lifetime chance to see the", social: "checkout facebook and twitter for updates")
+
