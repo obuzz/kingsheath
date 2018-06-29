@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="nav-item nav-link active mr-auto" href="#">Home<span class="sr-only">(current)</span></a>
+  <a class="nav-item nav-link" href="#section2anchor">News</a>
+  <a class="nav-item nav-link" href="#section3">About</a>
+  <a class="nav-item nav-link" href="#section4anchor">Contact</a>
+  <a class="nav-item nav-link" href="#section5">Archive</a>
+  <% if user_signed_in? %>
+   <%= link_to('logout', destroy_user_session_path, method: :delete) %>
+  <% else %>
+    <%= link_to('login', new_user_session_path) %>
+  <% end %>
+</nav>

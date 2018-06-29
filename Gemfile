@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '~> 0.11.2'
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery', '~> 0.0.1'
+gem 'devise', '~> 4.2'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
